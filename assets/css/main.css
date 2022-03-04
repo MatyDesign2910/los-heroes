@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+html {
+    background-color: #C9C9C9;
+}
+body {
+    font-family: 'Overpass Mono', monospace;
+    margin: 0;
+}
+div#app {
+    width: 85vw;
+    max-width: 100%;
+    margin: auto;
+    background-color: #fff;
+}
+.container-header {
+    width: -webkit-fill-available;
+    height: 60px;
+    display: flex;
+    border-bottom: 6px solid #F9A825;
+    padding: 0px 15px;
+}
+.logo-header, .logo-footer {
+    width: auto;
+    height: 33px;
+    display: contents;
+    align-items: center;
+}
+.logo-header img, .logo-footer img {
+    height: inherit;
+    align-self: center;
+}
+.navbar-header {
+    float: right;
+    display: flex;
+}
+li.nav-item {
+    width: max-content;
+}
+.spacer {
+    width: inherit;
+}
+.slider-nuxt {
+    height: 80vh;
+    overflow: hidden;
+    width: 100%;
+}
+img.img-slider-nuxt {
+    width: -webkit-fill-available;
+}
+.container-content-cards {
+    padding: 15px;
+}
+.container-cards-row {
+    display: block;
+    margin-bottom: 50px;
+}
+img.img-slider-nuxt[src="[object Object],[object Object],[object Object],[object Object],[object Object]"] {
+    display: none;
+}
+.container-card {
+    max-width: 31%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1.5%;
+    display: inline-block;
+    transition: ease-in-out .2s;
+}
+.container-card * {
+    text-decoration: none;
+}
+@media (max-width:768px){
+    .container-card {
+        width: -webkit-fill-available;
+        max-width: none;    
+    }
+}
+.card-img img {
+    border-bottom: 6px solid #F9A825;
+}
+.d-flex {
+    display: flex;
+}
+.card-title {
+    width: -webkit-fill-available;
+}
+.card-price {
+    flex: none;
+}
+.card-rating {
+    float: right;
+    display: flex;
+}
+.card-description {
+    width: -webkit-fill-available;
+}
+.card-rating img {
+    width: 15px !important;
+    margin: 3px;
+}
+.card-title h4 {
+    margin: 7px 0px 7px 0px;
+}
+.card-description p, .card-price p {
+    margin: 0px;
+    color: #424242;
+    font-size: 14px;
+}
+.container-footer {
+    background-color: #DCEDC8;
+    padding: 15px;
+}
+.description-footer p {
+    font-size: 10px;
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+    color: #707070;
+}
+.rrs-footer {
+    float: right;
+}
+.rrs-footer img {
+    height: 25px;
+}
+.container-card:hover {
+    transform: scale(1.05);
+}
